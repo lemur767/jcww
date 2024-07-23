@@ -1,0 +1,71 @@
+:root .body {
+  display: flex;
+  width: 100%;
+  padding-bottom: 54px;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Revalia';
+  background: linear-gradient(98deg, #FFF2B0 7.97%, #CCB0BD 88.77%);
+}
+
+
+.hero {
+  display: flex;
+  height: 559px;
+  flex-direction: row;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-family: Revalia;
+  background: linear-gradient(98deg, #FFF2B0 7.97%, #CCB0BD 88.77%);
+}
+.text_wrapper_title {
+  display: flex;
+  width: 594px;
+  height: 252px;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 594px;
+  height: 252px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Revalia;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.image_wrapper_hero {
+  width: 750px;
+  height: 500px;
+  flex-shrink: 0;
+ 
+}
+.hero_logo {
+  width: 750px;
+  height: 500px;
+  flex-shrink: 0;
+  background: url(/public/assets/dramamask.png)  cover no-repeat;
+}
+.construct{
+  display: flex;
+  padding: 32px 191px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #540025;
+  text-align: center;
+  font-family: Revalia;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(98deg, #FFF2B0 7.97%, #CCB0BD 88.77%);
+}
