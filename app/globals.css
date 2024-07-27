@@ -1,13 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
 html,
-body {
+body
+ {
   padding: 0;
   margin: 0;
-  font-family:
-    sans-serif,
-    Revalia;
   line-height: 1.6;
   font-size: 18px;
+  color: #5C0029;
+  background: #fff2B0 
 }
+body, html{
+  font-family: "Tenali Ramakrishna";
+  font-weight: normal;
+  font-style: normal;
+  }
+  
+  h1{
+  font-family: "Revalia";
+  font-weight: normal;
+  font-style: normal;
+  }
+  
+  h2, h3, h4{
+  font-family: "Raleway";
+  font-weight: normal;
+  font-style: oblique;
+  }
 * {
     box-sizing: border-box;
   }

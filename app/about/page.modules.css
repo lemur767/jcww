@@ -1,14 +1,5 @@
-html,
-body {
-    padding: 0;
-    margin: 0;
-    font-family:
-      sans-serif,
-      Revalia;
-    line-height: 1.6;
-    font-size: 18px;
-    background: linear-gradient(98deg, #FFF2B0 7.97%, #CCB0BD 88.77%);
-}
+    
+
 * {
     box-sizing: border-box;
 }
@@ -21,6 +12,20 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Revalia', sans-serif;
-
+}
+.container {
+    padding: 24px;
+    margin: 56px;
+    display: block;
+    font-family: 'Revalia', 'Raleway', sans-serif;
+    justify-content: top;
+    width: 100%;
+    align-items: center;
+       
+}
+h1 {
+    font-family: "Revalia";
+    font-weight: normal;
+    font-style: normal;
 }
 

@@ -8,7 +8,7 @@
     align-items: center;
     flex-direction: row;
     flex-shrink: 0;
-    background: linear-gradient(91deg, #FFF2B0 3.05%, #CCB0BD 92.43%);
+    background: #FFF2B0;
 }
 
 .nav_logo_container {
@@ -59,4 +59,23 @@
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
+}
+.mobile_nav {
+    padding: 8px;
+    display:none;
+
+}
+
+@media only screen and (max-width: 690px){
+    .nav_links,.nav_logo {
+        display: none
+    }
+    .mobile_nav {
+        display:flex;
+        flex-direction: row;
+    }
+    .cta_wrapper {
+        justify-content: space-between;
+        
+    }
 }

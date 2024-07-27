@@ -1,18 +1,23 @@
 "use client";
-import { style } from "./Button.module.css"
+
 import styles from "./Nav.module.css"
 import Button from "./Button"
 import Mask from "../../public/assets/mask.png"
 import Image from 'next/image'
 import Link  from 'next/link';
 import { useRouter } from 'next/navigation';
-
-
+import Hamburger from '../../public/assets/fa-solid_hamburger.svg'
+import {useState} from 'react'
 const Nav = () => {
     const router = useRouter()
+   const [isOpen,setIsOpen] = useState(false);
+   const openMenu= () => setIsOpen(!isOpen);
+
     return (
+        
         <>
-        <div className={styles.nav_main}>
+       
+        <div className={isOpen === false ? styles.nav_main : styles.nav_menu + " " + styles.mobile_nav }>
             <div className={styles.nav_logo_container}>
                 <Link href="/">
                     <Image
@@ -38,8 +43,19 @@ const Nav = () => {
                     type="button"
                     as={Link}
                     />
-
-
+                <div className={isOpen === false ? styles.mobile_nav : 
+                        styles.mobile_nav + ' '+ styles.mobile_nav}
+                    onClick={openMenu}               
+                >
+                     
+                <Image 
+                    className="mobile_logo"
+                    alt="Hamburger"
+                    width={91}
+                    height={79}
+                    src={Hamburger}
+                    />
+                </div>
             </div>
         </div>
       </>

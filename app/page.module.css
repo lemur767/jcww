@@ -3,9 +3,9 @@
   width: 100%;
   padding-bottom: 54px;
   flex-direction: column;
-  align-items: flex-start;
+  
   font-family: 'Revalia';
-  background: linear-gradient(98deg, #FFF2B0 7.97%, #CCB0BD 88.77%);
+  background: #FFF2B0;
 }
 
 
@@ -18,7 +18,7 @@
   align-items: center;
   gap: 24px;
   font-family: Revalia;
-  background: linear-gradient(98deg, #FFF2B0 7.97%, #CCB0BD 88.77%);
+  background: #FFF2B0;
 }
 .text_wrapper_title {
   display: flex;
@@ -33,9 +33,8 @@
   width: 594px;
   height: 252px;
   flex-shrink: 0;
-  color: #000;
+  color: #5C0029;
   text-align: center;
-  font-family: Revalia;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -67,5 +66,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  background: linear-gradient(98deg, #FFF2B0 7.97%, #CCB0BD 88.77%);
+  background: #FFF2B0;
+}
+@media only screen and (max-width: 568px) {
+   .hero {
+    flex-direction: column;
+
+   }
+  
 }

@@ -1,10 +1,10 @@
-import { Revalia } from "next/font/google";
+import { revalia, raleway } from './fonts'
 import "./globals.css";
 import Nav from './components/Nav'
 
 
 
-const font = Revalia({weight: "400", subsets: ["latin"] });
+
 
 export const metadata = {
   title: "Luchador Movie Review",
@@ -13,12 +13,27 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={font.className}>
-      
+    <html lang="en" className={revalia}>
       <body>
         <Nav/>
         {children}
-        </body>
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){
+                var i,e,d=document,s="script";
+                i=d.createElement("script");
+                i.async=1;
+                i.charset="UTF-8";
+                i.src="https://cdn.curator.io/published/7ba8ae19-e90a-4ea3-9475-48c7674a9581.js";
+                e=d.getElementsByTagName(s)[0];
+                e.parentNode.insertBefore(i, e);
+              })();
+            `
+          }}
+        />
+      </body>
     </html>
   );
 }
