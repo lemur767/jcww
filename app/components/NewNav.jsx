@@ -1,45 +1,62 @@
-import styles from './NewNav.modules.css';
+"use client";
+
+import './NewNav.css';
 import Mask from "../../public/assets/mask.png"
 import Image from 'next/image';
 import Link from 'next/link';
 import Hamburger from '../../public/assets/fa-solid_hamburger.svg';
 import {useState} from 'react';
+import Button from '../components/Button'
+import {useRouter} from 'next/navigation';
+
 
 
 const Navbar = () => {
+    const router = useRouter();
     const [menuOpen, setMenuOpen] = useState(false);
     
     const handleNav = () => {
-        setMenuOpen(!menuOpen)
+        setMenuOpen(!menuOpen);
     }
 
     return (
-        <nav className={styles.navbar}>
-            <div className={styles.nav_container}>
+        <nav styleName='navbar'>
+            <div styleName='nav_container'>
                <Link href='/'>
                 <Image 
                     src={Mask}
                     alt='Logo'
                     width={99}
                     height={100}
-                    className={styles.nav_logo}
+                    styleName='nav_logo'
 
                 />
                 </Link>
-               <div className={styles.navmenu}>
+               <div styleName='navmenu'>
                 <ul>
                     <Link href="/about">
-                        <li className={styles.navitem}>About</li>
+                        <li styleName='navitem'>About</li>
                     </Link>
                     <Link href="/booking">
-                        <li className={styles.navitem}>Booking</li>
+                        <li styleName='navitem'>Booking</li>
                     </Link>
                     <Link href="/gallery">
-                        <li className={styles.navitem}>Past Events</li>
+                        <li styleName='navitem'>Past Events</li>
                     </Link>
                 </ul>
                </div>
-                <div className={styles.hamburger} onClick={handleNav}>
+               <Link href="/sponsor">
+               <Button 
+                    classname="primary" 
+                    onClick={() => router.push('/sponsor')} 
+                    text="Sponsor Me!"
+                    type="button"
+                    as={Link}
+                    />
+                        </Link>
+            </div>
+            <div styleName= { menuOpen ? 'hiddennav' : 'mobilenavmenu'}>
+            <div styleName='hamburger' onClick={handleNav}>
                     <Image
                         src={Hamburger}
                         alt='Hamburger'
@@ -48,10 +65,31 @@ const Navbar = () => {
                     />
                 
                 </div>
-            </div>
-            <div className= { menuOpen ? {styles.mobilenav} 
-
+                
+               <Link href='/'>
+               <Button 
+                    classname="primary" 
+                    onClick={() => router.push('/sponsor')} 
+                    text="Sponsor Me!"
+                    type="button"
+                    as={Link}
+                    />
+                </Link>
+               <div styleName='mobilenavmenu'>
+                <ul>
+                    <Link href="/about">
+                        <li onClick={ () => setMenuOpen(false)} styleName='navitem'>About</li>
+                    </Link>
+                    <Link href="/booking">
+                        <li onClick={ () => setMenuOpen(false)} styleName='navitem'>Booking</li>
+                    </Link>
+                    <Link href="/gallery">
+                        <li onClick={ () => setMenuOpen(false)} styleName='navitem'>Past Events</li>
+                    </Link>
+                </ul>
+               </div>
             </div>
         </nav>
     )
 }
+export default Navbar;

@@ -1,6 +1,8 @@
 import { revalia, raleway } from './fonts'
 import "./globals.css";
 import Nav from './components/Nav'
+import NewNav from './components/NewNav'
+
 
 
 
@@ -15,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={revalia}>
       <body>
-        <Nav/>
+        <NewNav/>
         {children}
         <script
           type="text/javascript"

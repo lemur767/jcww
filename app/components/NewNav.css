@@ -1,39 +1,51 @@
+
+
+
 .navbar {
-    position: fixed;
-    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: row;
+    
     height: 79;
+    padding:16px;
+
 
 }
 .nav_container {
-    display:flex;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: full;
-    width: full;
+    height: 79px;
+   
     padding-top: 2px;
     padding-bottom: 2px;
-
 }
+
 .nav_logo {
     cursor: pointer;
 }
+
 .navmenu {
     display:flex;
     flex-direction: row;
     padding: 8px;
-    
-
 }
+
 .navitem {
     color: maroon;
-    margin-left: 10px;
+    margin-left: 8px;
     text-transform: uppercase;
 }
-.navitem :hover {
+
+.navitem:hover {
     text-decoration: underline;
     text-shadow: 2px;
     border-bottom: 2px maroon;
 }
+
 .hamburger {
     display: hidden;
     cursor: pointer;
@@ -44,15 +56,33 @@
     left:0;
     top: 0;
     width: 65%;
-    height: 100%;
+    height:100vh;
+    padding: 16px;
+    background: #fff2b0;
+    animation:ease-in 500ms;
     
+    
+}
+.hiddennav{
+    position: fixed;
+    left: -100%;
+    top:0;
+    padding:16px;
+    animation: ease-in 500ms;
+}
+
+.mobilenavmenu {
+    display: hidden;
 }
 
 @media (max-width: 690px){
-    .navmenu {
+    .nav_container {
         display: hidden;
     }
     .hamburger {
         display: block;
+    }
+    body{
+        font-size: 16px;
     }
 }

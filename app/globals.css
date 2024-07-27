@@ -20,7 +20,8 @@ body, html{
   font-family: "Revalia";
   font-weight: normal;
   font-style: normal;
-  }
+  font-size: xx-large;
+ }
   
   h2, h3, h4{
   font-family: "Raleway";
@@ -44,3 +45,18 @@ body, html{
     max-width: 100%;
     display: block;
   }
+  ul {
+    list-style-type: none;
+  }
+  
+  
+@media (max-width: 590px){
+  body{
+    font-size: 16px;
+  }
+  h1{
+    font-size:medium;
+
+  }
+
+}
