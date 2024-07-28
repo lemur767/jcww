@@ -1,14 +1,14 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./styles/Home.module.css";
 import dramaMask from "/public/assets/dramamask.png";
-import { Revalia } from 'next/font/google';
+import { revalia, raleway, tenali } from './fonts.js';
 
 export default function Home() {
   return (
     <>
       <div className={styles.hero}>
         <div className={styles.text_wrapper_title}>
-          <div className={styles.title}>Johnny Calimari Luchador Movie Review</div>
+          <div className={styles.title}>Johnny Calimarri Luchador Movie Review</div>
         </div>
         <div className={styles.image_wrapper_hero}>
           <Image
@@ -19,6 +19,11 @@ export default function Home() {
             alt="Navigation logo"
           />
         </div>
+      </div>
+      <div className={styles.under}>
+        <h1>
+          UNDER CONSTRUCTION!  Full Features Coming Soon.  
+        </h1>
       </div>
       <div>
         <div className={styles.construct} id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" className="crt-logo crt-tag">Powered by Curator.io</a></div>

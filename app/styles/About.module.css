@@ -1,9 +1,5 @@
     
 
-* {
-    box-sizing: border-box;
-}
-
 .main {
     padding: 8px;
     display: flex;
@@ -23,9 +19,3 @@
     align-items: center;
        
 }
-h1 {
-    font-family: "Revalia";
-    font-weight: normal;
-    font-style: normal;
-}
-

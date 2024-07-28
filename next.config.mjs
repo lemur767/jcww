@@ -4,5 +4,6 @@ const nextConfig = {
     images: {
         unoptimized: true
     },
+    cssModules: true,
 }
 export default nextConfig;

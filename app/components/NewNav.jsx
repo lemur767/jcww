@@ -1,6 +1,6 @@
 "use client";
 
-import './NewNav.css';
+import styles from '../styles/NewNav.module.css';
 import Mask from "../../public/assets/mask.png"
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,28 +20,29 @@ const Navbar = () => {
     }
 
     return (
-        <nav styleName='navbar'>
-            <div styleName='nav_container'>
+       <>
+       <div className={styles.navbar}>
+            <div className={styles.container}>
                <Link href='/'>
                 <Image 
                     src={Mask}
                     alt='Logo'
                     width={99}
                     height={100}
-                    styleName='nav_logo'
+                    className={styles.nav_logo}
 
                 />
                 </Link>
-               <div styleName='navmenu'>
+               <div className={styles.nav_menu}>
                 <ul>
                     <Link href="/about">
-                        <li styleName='navitem'>About</li>
+                        <li className={styles.navitem}>About</li>
                     </Link>
                     <Link href="/booking">
-                        <li styleName='navitem'>Booking</li>
+                        <li className={styles.navitem}>Booking</li>
                     </Link>
                     <Link href="/gallery">
-                        <li styleName='navitem'>Past Events</li>
+                        <li className={styles.navitem}>Past Events</li>
                     </Link>
                 </ul>
                </div>
@@ -55,8 +56,8 @@ const Navbar = () => {
                     />
                         </Link>
             </div>
-            <div styleName= { menuOpen ? 'hiddennav' : 'mobilenavmenu'}>
-            <div styleName='hamburger' onClick={handleNav}>
+            <div className={ menuOpen ? styles.hiddennav : styles.mobilenavmenu}>
+            <div className={styles.hamburger} onClick={handleNav}>
                     <Image
                         src={Hamburger}
                         alt='Hamburger'
@@ -75,21 +76,22 @@ const Navbar = () => {
                     as={Link}
                     />
                 </Link>
-               <div styleName='mobilenavmenu'>
+               <div className={styles.mobilenavmenu}>
                 <ul>
                     <Link href="/about">
-                        <li onClick={ () => setMenuOpen(false)} styleName='navitem'>About</li>
+                        <li onClick={ () => setMenuOpen(false)} className={styles.navitem}>About</li>
                     </Link>
                     <Link href="/booking">
-                        <li onClick={ () => setMenuOpen(false)} styleName='navitem'>Booking</li>
+                        <li onClick={ () => setMenuOpen(false)} className={styles.navitem}>Booking</li>
                     </Link>
                     <Link href="/gallery">
-                        <li onClick={ () => setMenuOpen(false)} styleName='navitem'>Past Events</li>
+                        <li onClick={ () => setMenuOpen(false)} className={styles.navitem}>Past Events</li>
                     </Link>
                 </ul>
                </div>
             </div>
-        </nav>
+        </div>
+        </>
     )
 }
 export default Navbar;

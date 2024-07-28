@@ -1,62 +1,64 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+
 html,
 body
  {
   padding: 0;
   margin: 0;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 20px;
   color: #5C0029;
-  background: #fff2B0 
-}
-body, html{
+  background: #fff2B0;
   font-family: "Tenali Ramakrishna";
   font-weight: normal;
-  font-style: normal;
-  }
+  font-style: normal; 
+}
+
   
-  h1{
+h1{
   font-family: "Revalia";
   font-weight: normal;
   font-style: normal;
   font-size: xx-large;
- }
+}
   
-  h2, h3, h4{
+h2, h3, h4{
   font-family: "Raleway";
   font-weight: normal;
   font-style: oblique;
-  }
-* {
-    box-sizing: border-box;
-  }
-  a {
-    color: none;
-    text-decoration: none;
-  }
-  a:visited{
-    color:none;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  img {
-    max-width: 100%;
-    display: block;
-  }
-  ul {
-    list-style-type: none;
-  }
+}
+*{
+  box-sizing: border-box;
+}
+a {
+  color: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  
+}
+  
+  
+img {
+  max-width: 100%;
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
   
   
 @media (max-width: 590px){
   body{
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Revalia';
+    font-weight: 400S;
   }
   h1{
     font-size:medium;
-
   }
-
+  p{
+    font-size: small;
+  }
 }

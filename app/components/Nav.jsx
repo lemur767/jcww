@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./Nav.module.css"
+import styles from "../styles/Nav.module.css"
 import Button from "./Button"
 import Mask from "../../public/assets/mask.png"
 import Image from 'next/image'
@@ -8,10 +8,12 @@ import Link  from 'next/link';
 import { useRouter } from 'next/navigation';
 import Hamburger from '../../public/assets/fa-solid_hamburger.svg'
 import {useState} from 'react'
+
+
 const Nav = () => {
     const router = useRouter()
    const [isOpen,setIsOpen] = useState(false);
-   const openMenu= () => setIsOpen(!isOpen);
+   const openMenu = () => setIsOpen(!isOpen);
 
     return (
         
@@ -35,26 +37,41 @@ const Nav = () => {
                 <Link href="/gallery" className={styles.link_wrapper}>Past Events</Link>
             </div>
             <div className={styles.cta_wrapper}>
-                
+                <Link href='/sponsor'>
                 <Button 
                     classname="primary" 
-                    onClick={() => router.push('/sponsor')} 
                     text="Sponsor Me!"
                     type="button"
                     as={Link}
                     />
-                <div className={isOpen === false ? styles.mobile_nav : 
-                        styles.mobile_nav + ' '+ styles.mobile_nav}
-                    onClick={openMenu}               
-                >
-                     
-                <Image 
-                    className="mobile_logo"
-                    alt="Hamburger"
-                    width={91}
-                    height={79}
-                    src={Hamburger}
+                    </Link>
+                <div className={isOpen === false ? styles.mobile_nav :' '+ styles.mobile_menu}
+                     onClick={openMenu}>
+                    <Image 
+                        className="mobile_logo"
+                        alt="Hamburger"
+                        width={91}
+                        height={79}
+                        src={Hamburger}
                     />
+                </div>
+                <div className={styles.mobile_menu}>
+                    <ul>
+                        <Link href="/about">
+                        <li className={styles.menuitem}>About</li>
+                        </Link>
+                        <Link href="/booking">
+                        <li className={styles.menuitem}>Booking</li>
+                        </Link>
+                        <Link href="/gallery">
+                        <li className={styles.menuitem}>Past Events</li>
+                        </Link>
+                        <Link href="/sponsor">
+                        <li className={styles.menuitem}>Sponsorship</li>
+                        </Link>
+                      
+                       
+                    </ul>
                 </div>
             </div>
         </div>

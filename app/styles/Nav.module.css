@@ -1,5 +1,6 @@
 
 .nav_main {
+    
     display: flex;
     padding: 56px;
     width: 100%;
@@ -23,6 +24,7 @@
 
 }
 .nav_logo {
+    display: block;
     height: 100px;
     align-self: stretch;
     background: url(/public/assets/mask.png) cover no-repeat;
@@ -53,7 +55,8 @@
 }
 .cta_wrapper {
     display: flex;
-    width: 217px;
+    flex-direction: row;
+    width: 100vh;
     padding: 12px 0px;
     justify-content: center;
     align-items: center;
@@ -65,10 +68,23 @@
     display:none;
 
 }
+.mobile_menu{
+    display:none;
+    left: -100%;
+    padding: 16px;
+    background: #FFF2B0;
+    color:maroon;
+    justify-content: right;
+    font-size: 24px;
+    font-weight:400;
+    animation: ease-in 500ms linear;
+
+}
 
 @media only screen and (max-width: 690px){
     .nav_links,.nav_logo {
-        display: none
+        display: none;
+       
     }
     .mobile_nav {
         display:flex;
@@ -76,6 +92,10 @@
     }
     .cta_wrapper {
         justify-content: space-between;
-        
     }
+    .mobile_menu{
+        display:flex;
+        flex-direction: column;
+    }
+    
 }
