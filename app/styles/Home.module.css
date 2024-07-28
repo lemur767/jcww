@@ -1,70 +1,6 @@
 
-:global {
-  
-  body
-  {
-    padding: 0;
-    margin: 0;
-    line-height: 1.6;
-    font-size: 20px;
-    color: #5C0029;
-    background: #fff2B0;
-    font-family: "Tenali Ramakrishna";
-    font-weight: normal;
-    font-style: normal; 
-  }
-
-    
-  h1{
-    font-family: "Revalia";
-    font-weight: normal;
-    font-style: normal;
-    font-size: xx-large;
-  }
-    
-  h2, h3, h4{
-    font-family: "Raleway";
-    font-weight: normal;
-    font-style: oblique;
-  }
-  *{
-    box-sizing: border-box;
-  }
-  a {
-    color: none;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-    
-  }
-    
-    
-  img {
-    max-width: 100%;
-    display: block;
-  }
-  ul {
-    list-style-type: none;
-  }
-    
-    
-  @media (max-width: 590px){
-    body{
-      font-size: 18px;
-      font-family: 'Revalia';
-      font-weight: 400S;
-    }
-    h1{
-      font-size:medium;
-    }
-    p{
-      font-size: small;
-    }
-  }
-}
 .hero {
-  
+ 
   display: flex;
   height: 559px;
   flex-direction: row;
@@ -126,9 +62,12 @@
 }
 @media only screen and (max-width: 568px) {
    .hero {
+    display:flex;
+    width:100vh;
+    height:fit-content;
     flex-direction: column;
     font-size:16px;
-    width: 100vh;
+   
     }
  
 }
