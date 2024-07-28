@@ -1,6 +1,7 @@
 import { revalia, raleway } from './fonts'
 import './styles/globals.css'
 import Nav from './components/Nav'
+import { Analytics } from "@vercel/analytics/react"
 /*import NewNav from './components/NewNav'*/
 
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={revalia}>
       <body>
+        <Analytics/>
         <Nav/>
         {children}
         <script
