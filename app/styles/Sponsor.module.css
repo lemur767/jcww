@@ -1,0 +1,21 @@
+    
+
+.main {
+    padding: 8px;
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Revalia', sans-serif;
+}
+.container {
+    padding: 24px;
+    margin: 56px;
+    display: block;
+    font-family: 'Revalia', 'Raleway', sans-serif;
+    justify-content: top;
+    width: 100%;
+    align-items: center;
+       
+}
