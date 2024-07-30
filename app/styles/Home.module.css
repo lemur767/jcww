@@ -1,4 +1,6 @@
-
+ul .nav_links{
+  list-style-type: none;
+}
 .hero {
  
   display: flex;
@@ -14,7 +16,7 @@
 }
 .text_wrapper_title {
   display: flex;
-  width: fill;
+  width: fit-content;
   height: fit-content;
   justify-content: center;
   align-items: center;
@@ -34,9 +36,10 @@
 }
 
 .image_wrapper_hero {
-  width: 750px;
-  height: 500px;
-  flex-shrink: 0;
+  width:750px;
+  justify-content: center;
+  align-items: center;
+  height:fit-content;
  
 }
 .hero_logo {
@@ -59,10 +62,20 @@
   font-weight: 400;
   line-height: normal;
   background: #FFF2B0;
+
 }
-@media only screen and (max-width: 568px) {
+.under {
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  font-family: 'tenali';
+  font-size: xx-large;
+
+
+}
+@media only screen and (max-width: 972px) {
    .hero {
-    display:flex;
+    display:block;
     width:100vh;
     height:fit-content;
     flex-direction: column;

@@ -2,7 +2,9 @@ import React from 'react'
 import styles from '../styles/Sponsor.module.css'
 
 const Sponsor = () => {
-  return (<div className={styles.container}>
+  return (
+  
+  <div className={styles.container}>
     <div className={styles.main}>
       
     <div>
