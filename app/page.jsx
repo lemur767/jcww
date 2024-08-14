@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import styles from './styles/Home.module.css';
 import dramaMask from '/public/assets/dramamask.png';
+import MaskCanvas from './components/Mask';
+import ColorPicker from './components/ColorPicker';
+import TextEditor from './components/TextSelector';
+import PatternSelector from './components/PatternSelector';
 
 export default function Home() {
 	return (
@@ -22,9 +26,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div className={styles.under}>
-        <h2>
-				UNDER CONSTRUCTION! Full Features Coming Soon.
-        </h2>
+				<h2>UNDER CONSTRUCTION! Full Features Coming Soon.</h2>
 			</div>
 			<div>
 				<div className={styles.construct} id='curator-feed-default-feed-layout'>

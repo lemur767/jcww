@@ -1,63 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
 
 html,
-body
- {
-  padding: 0;
-  margin: 0;
-  line-height: 1.6;
-  font-size: 20px;
-  color: #5C0029;
-  background: #fff2B0;
-  font-weight: normal;
-  font-style: normal; 
+body {
+	padding: 0;
+	margin: 0;
+	overflow: x-hidden;
+	line-height: 1.6;
+	font-size: 20px;
+	color: #5c0029;
+	background: #fff2b0;
+	font-weight: normal;
+	font-style: normal;
 }
 
-  
-h1{
-  font-family: "Revalia";
-  font-weight: normal;
-  font-style: normal;
-  font-size: xx-large;
+h1 {
+	font-family: 'Revalia';
+	font-weight: normal;
+	font-style: normal;
+	font-size: xx-large;
 }
-  
-h2, h3, h4{
-  font-family: "Raleway";
-  font-weight: normal;
-  font-style: oblique;
+
+h2,
+h3,
+h4 {
+	font-family: 'Raleway';
+	font-weight: normal;
+	font-style: normal;
 }
-*{
-  box-sizing: border-box;
+h2 {
+	font-size: larger;
+}
+h3 {
+	font-size: medium;
+	font-style: oblique;
+	font-weight: 400;
+}
+* {
+	box-sizing: border-box;
 }
 a {
-  color: none;
-  text-decoration: none;
+	color: none;
+	text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
-  
+	text-decoration: underline;
 }
-  
-  
+
 img {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 ul {
-  list-style-type: none;
+	list-style-type: none;
 }
-  
-  
-@media (max-width: 590px){
-  body{
-    font-size: 18px;
-    font-family: 'Revalia';
-    font-weight: 400;
-  }
-  h1{
-    font-size:medium;
-  }
-  p{
-    font-size: small;
-  }
+
+@media (max-width: 590px) {
+	body {
+		font-size: 18px;
+		font-family: 'Revalia';
+		font-weight: 400;
+	}
+	h1 {
+		font-size: medium;
+	}
+	p {
+		font-size: small;
+	}
 }

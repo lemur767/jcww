@@ -45,11 +45,11 @@ const About = () => {
 					cause, in turn we will ensure your brand or product, idea or dream, is
 					seen by the thousands that frequently enjoy our short videos and
 					events at home in Ontario and online across the planet.
-					<h2>
-						Listen, learn and be a good friend. Don&apos;t swear, bully,
-						don&apos;t go out far --Johnny Calimarri
-					</h2>
 				</p>
+				<h2>
+					Listen, learn and be a good friend. Don&apos;t swear, bully,
+					don&apos;t go out far --Johnny Calimarri
+				</h2>
 			</div>
 		</div>
 	);

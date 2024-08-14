@@ -1,26 +1,24 @@
 .header {
 	box-sizing: border-box;
 }
- a .navLink {
-  text-decoration: none;
-  color:#000;
-  font-family: Revalia, sans-serif;
-
+a .navLink {
+	text-decoration: none;
+	color: #000;
+	font-family: Revalia, sans-serif;
 }
- a .navLink:hover{
-  color:maroon;
-  text-shadow:#002c56;
-  text-decoration: none;
-
+a .navLink:hover {
+	color: maroon;
+	text-shadow: #002c56;
+	text-decoration: none;
 }
 
-.primary{
-    text-decoration: none;
+.primary {
+	text-decoration: none;
 }
 
 /* navbar */
-Button.primary:hover{
-  padding: 16px 8px;
+Button.primary:hover {
+	padding: 16px 8px;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
@@ -32,7 +30,7 @@ Button.primary:hover{
 	background: linear-gradient(109deg, #ffe354 1.97%, #002c56 111.33%);
 	box-shadow: 2px 4px 2px 0px rgba(0, 0, 0, 0.45);
 }
-.navbar {
+.navBar {
 	display: flex;
 	padding: 8px;
 	width: 100%;
@@ -57,10 +55,9 @@ Button.primary:hover{
 	font-weight: 400;
 	line-height: normal;
 }
-.navLink:hover{
-  color:maroon;
-  text-shadow: #002c56;
-
+.navLink:hover {
+	color: maroon;
+	text-shadow: #002c56;
 }
 
 /* logo  */
@@ -83,6 +80,7 @@ Button.primary:hover{
 .ctaWrapper {
 	display: flex;
 	flex-direction: row;
+	padding: 24px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -96,28 +94,30 @@ Button.primary:hover{
 
 /* ul  */
 .navMenu {
-	
 	display: flex;
-  	color:maroon;
+	color: maroon;
 	justify-content: space-between;
 	align-items: center;
 	gap: 60px;
-	background:#fff2b0;
+	background: #fff2b0;
 }
 
 /* media queries */
 
-@media screen and (max-width: 972px) {
+@media screen and (max-width: 425px) {
 	/* hamburger */
 	.hamburger {
 		display: block;
+		justify-content: right;
 		cursor: pointer;
 	}
 	.ctaWrapper {
-		justify-content: space-between;
-	}
-	.navbar {
 		justify-content: center;
+		gap: 24px;
+	}
+	.navBar {
+		justify-content: center;
+		flex-shrink: 4;
 	}
 
 	.bar {
@@ -148,13 +148,14 @@ Button.primary:hover{
 		flex-direction: column;
 		gap: 0;
 		top: 130px;
+
 		left: -100%;
 		text-align: start;
 		width: 100%;
 		transition: 0.7s ease-in-out;
 		background-color: #fff2b0;
 		padding: 10px;
-		border-top: 2px solid rgba(0,0,0,0.25);
+		border-top: 2px solid rgba(0, 0, 0, 0.25);
 	}
 
 	.navMenu.active {

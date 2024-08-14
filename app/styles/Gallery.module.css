@@ -1,4 +1,6 @@
-
 .main {
-    background: linear-gradient(98deg, #FFF2B0 7.97%, #CCB0BD 88.77%);
+	justify-content: center;
+	align-items: center;
+	padding: 2vw;
+	margin: auto;
 }

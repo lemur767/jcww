@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[301],{5965:function(n,t,_){Promise.resolve().then(_.t.bind(_,2611,23))},2611:function(n){n.exports={main:"About_main__YXgsD",container:"About_container__nti_c"}}},function(n){n.O(0,[431,971,23,744],function(){return n(n.s=5965)}),_N_E=n.O()}]);
