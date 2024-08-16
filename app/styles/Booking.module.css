@@ -1,0 +1,6 @@
+.main {
+	display: block;
+	position: relative;
+	gap: 8px;
+	background-color: rgba(255, 153, 148, 0.25);
+}

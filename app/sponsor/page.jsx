@@ -48,7 +48,7 @@ const Sponsor = () => {
 				If you have interest in becoming a sponsor please fill out the form
 				below
 			</h2>
-			<div className={styles.formContainer}>
+			<div className={styles.formWrapper}>
 				<ContactForm />
 			</div>
 		</div>

@@ -23,6 +23,17 @@
 	width: 90vw;
 	align-items: center;
 }
+.formWrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 50%;
+	height: fit-content;
+	padding: 2vw 4vw;
+	gap: 8px;
+	max-width: 600px;
+	border-radius: 15px;
+}
 .main h1 {
 	text-decoration: underline;
 	text-decoration-thickness: 2px;
