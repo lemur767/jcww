@@ -18,7 +18,7 @@ export async function POST(request) {
 
 		const data = await resend.emails.send({
 			from: 'Sponsor Application <onboarding@jc-ww.ca>',
-			to: ['lemur767trap@gmail.com', email], // Send to both admin and user
+			to: [process.env.DOMAIN], // Send to both admin and user
 			subject: subject,
 			react: EmailTemplate({
 				sponsor,
