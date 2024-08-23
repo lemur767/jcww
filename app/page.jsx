@@ -26,7 +26,14 @@ export default function Home() {
 				</div>
 			</div>
 			<div className={styles.under}>
-				<h2>UNDER CONSTRUCTION! Full Features Coming Soon.</h2>
+				<h1>Upcoming Events:</h1>
+				<h2>Hindi and Arabic Contests - Date: TBD</h2>
+				<p>
+					Contest is for the next Hindi/English and Arabic/English speaking host
+					for Johnny Calimarri&apos;s Movie Review and Cartoon Shows. Winner of
+					the contest will be the offical translator of my show in those two
+					languages. They may also get monkey flipped as a bonus prize.
+				</p>
 			</div>
 			<div>
 				<div className={styles.construct} id='curator-feed-default-feed-layout'>

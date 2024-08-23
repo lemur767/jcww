@@ -45,6 +45,7 @@ const ContactForm = () => {
 					message: '',
 				});
 				toast.success('Message Sent');
+				reset();
 			} else {
 				toast.error('Failed to send message');
 				console.log('data', data);
