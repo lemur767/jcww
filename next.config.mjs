@@ -4,6 +4,26 @@ const nextConfig = {
 	images: {
 		unoptimized: true,
 	},
+	async headers() {
+		return [
+			{
+				source: '/api/send',
+				headers: [
+					{ key: 'Access-Control-Allow-Credentails', value: 'true' },
+					{ key: 'Access-Control-Allow-Origin', value: '*' },
+					{
+						key: 'Access-Control-Allow-Methods',
+						value: 'GET,DELETE,PUT,POST,PATCH',
+					},
+					{
+						key: 'Access-Control-Allow-Headers',
+						value:
+							'Accept-Post, Accept, Content-Length, Content-Type, X-Requested-With, X-Api-Version, User-Agent, Host, Accept-Endcoding, Connection',
+					},
+				],
+			},
+		];
+	},
 };
 function throwError(envVar) {
 	throw `Abort: You need to define ${envVar} in the .env file.`;
