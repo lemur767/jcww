@@ -8,7 +8,7 @@ a .navLink {
 }
 a .navLink:hover {
 	color: maroon;
-	text-shadow: #002c56;
+	text-shadow: 2px 3px #002c56;
 	text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ Button.primary:hover {
 	align-items: center;
 	flex-direction: row;
 	flex-shrink: 0;
-	background: #fff2b0;
+	background: #f7f1c6;
 }
 .navLink {
 	display: flex;
@@ -57,7 +57,8 @@ Button.primary:hover {
 }
 .navLink:hover {
 	color: maroon;
-	text-shadow: #002c56;
+	text-decoration: none;
+	text-shadow: 0.5px 0.5px #002c56;
 }
 
 /* logo  */
@@ -99,7 +100,7 @@ Button.primary:hover {
 	justify-content: space-between;
 	align-items: center;
 	gap: 60px;
-	background: #fff2b0;
+	background: #f7f1c6;
 }
 
 /* media queries */
@@ -148,12 +149,11 @@ Button.primary:hover {
 		flex-direction: column;
 		gap: 0;
 		top: 130px;
-
 		left: -100%;
 		text-align: start;
 		width: 100%;
 		transition: 0.7s ease-in-out;
-		background-color: #fff2b0;
+		background-color: #fffffa;
 		padding: 10px;
 		border-top: 2px solid rgba(0, 0, 0, 0.25);
 	}

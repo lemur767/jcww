@@ -4,11 +4,11 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	overflow: x-hidden;
+	overflow: x-hidden y-hidden;
 	line-height: 1.6;
 	font-size: 20px;
-	color: #5c0029;
-	background: #fff2b0;
+	color: #000000;
+	background: #f7f1c6;
 	font-weight: normal;
 	font-style: normal;
 }

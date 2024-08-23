@@ -15,7 +15,7 @@ ul .nav_links {
 	gap: 24px;
 
 	font-family: Revalia;
-	background: #fff2b0;
+	background: #f7f1c6;
 }
 .text_wrapper_title {
 	display: flex;
@@ -63,7 +63,7 @@ ul .nav_links {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	background: #fff2b0;
+	background: #f7f1c6;
 }
 .under {
 	display: inline-block;

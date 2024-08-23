@@ -2,9 +2,9 @@
 import Button from '../components/Button';
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
-import styles from '../styles/ContactForm.module.css';
+import styles from '../styles/Booking.module.css';
 
-const ContactForm = () => {
+const BookingForm = () => {
 	const [data, setData] = useState({
 		sponsor: '',
 		email: '',
@@ -58,14 +58,14 @@ const ContactForm = () => {
 	};
 
 	return (
-		<form className={styles.formContainer} onSubmit={sendEmail}>
+		<form className={styles.main} onSubmit={sendEmail}>
 			<input
+				className={styles.inputWrapper}
 				name='sponsor'
 				value={data.sponsor}
 				onChange={handleChange}
 				type='text'
 				placeholder='Company Name'
-				autoComplete='off'
 			/>
 			<input
 				name='email'
@@ -73,7 +73,6 @@ const ContactForm = () => {
 				onChange={handleChange}
 				type='email'
 				placeholder='Email'
-				autoComplete='off'
 			/>
 			<input
 				name='phone'
@@ -81,7 +80,6 @@ const ContactForm = () => {
 				onChange={handleChange}
 				type='text'
 				placeholder='Phone Number'
-				autoComplete='off'
 			/>
 			<input
 				name='subject'
@@ -95,11 +93,9 @@ const ContactForm = () => {
 				value={data.message}
 				placeholder='Message'
 				onChange={handleChange}
-				autoComplete='off'
 			></textarea>
 			<Button
 				className='primary'
-				style='justify-content: center;'
 				text={isLoading ? 'Sending...' : 'Submit Message'}
 				type='submit'
 				onClick={sendEmail}
@@ -108,4 +104,5 @@ const ContactForm = () => {
 		</form>
 	);
 };
-export default ContactForm;
+
+export default BookingForm;

@@ -2,5 +2,19 @@
 	display: block;
 	position: relative;
 	gap: 8px;
-	background-color: rgba(255, 153, 148, 0.25);
+	background-color: #f7f1c6;
+}
+.formContainer {
+	justify-content: center;
+	justify-items: center;
+	background: rgba(163, 118, 115, 0.25);
+	gap: 16px;
+	display: flex;
+	flex-direction: column;
+	padding: 2vw;
+	width: fit-content;
+	height: auto;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px 0.3px black;
+	border: medium solid #fff02b;
 }
