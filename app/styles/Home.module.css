@@ -72,7 +72,7 @@ ul .nav_links {
 	font-family: 'tenali';
 	font-size: xx-large;
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
 	.hero {
 		display: flex;
 		width: fit-content;
