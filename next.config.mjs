@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	output: 'export',
 	images: {
 		unoptimized: true,
 	},
@@ -9,11 +8,11 @@ const nextConfig = {
 			{
 				source: '/api/send',
 				headers: [
-					{ key: 'Access-Control-Allow-Credentails', value: 'true' },
+					{ key: 'Access-Control-Allow-Credentials', value: 'true' },
 					{ key: 'Access-Control-Allow-Origin', value: '*' },
 					{
 						key: 'Access-Control-Allow-Methods',
-						value: 'GET,DELETE,PUT,POST,PATCH',
+						value: 'GET, DELETE, PUT, POST, PATCH',
 					},
 					{
 						key: 'Access-Control-Allow-Headers',
