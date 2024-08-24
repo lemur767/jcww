@@ -7,14 +7,14 @@
 	justify-content: center;
 	align-items: center;
 	font-family: Revalia, sans-serif;
-	background-color: rgba(255, 153, 148, 0.25);
+	background-color: #ffffcc;
 	border-radius: 15px;
 	border: 2px solid #fff02b;
 	box-shadow: 3px;
 }
 .container {
 	padding: 24px;
-	margin: 48px;
+	margin: 16px;
 	display: flex;
 	flex-direction: column;
 	font-size: large;
@@ -29,7 +29,7 @@
 	text-decoration-thickness: 2px;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 425px) {
 	.main h1 {
 		font-size: 28px;
 	}
@@ -50,13 +50,22 @@
 		font-size: 18px;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 426px) {
 	.container {
 		width: 80vw;
 		height: fit-content;
 		font-size: 20px;
-		margin: 28px;
+		margin: 24px;
 		padding: 2px;
+		justify-content: center;
+		align-items: center;
+	}
+	.main {
+		width: 80vw;
+		height: fit-content;
+		font-size: 20px;
+		margin: auto;
+		padding: 4px;
 		justify-content: center;
 		align-items: center;
 	}
