@@ -66,4 +66,63 @@ ul {
 	p {
 		font-size: small;
 	}
-}
+/* Existing styles */
+
+/* Tablet devices (768px and below) */
+@media (max-width: 768px) {
+	/* Add your tablet-specific styles here */
+	.container {
+	  width: 90%;
+	  padding: 0 15px;
+	}
+	
+	/* Adjust font sizes */
+	h1 {
+	  font-size: 24px;
+	}
+	
+	h2 {
+	  font-size: 20px;
+	}
+	
+	p {
+	  font-size: 16px;
+	}
+	
+	/* Adjust layout */
+	.column {
+	  width: 50%;
+	}
+  }
+  
+  /* Mobile devices (425px and below) */
+  @media (max-width: 425px) {
+	/* Add your mobile-specific styles here */
+	.container {
+	  width: 100%;
+	  padding: 0 10px;
+	}
+	
+	/* Further adjust font sizes */
+	h1 {
+	  font-size: 20px;
+	}
+	
+	h2 {
+	  font-size: 18px;
+	}
+	
+	p {
+	  font-size: 14px;
+	}
+	
+	/* Adjust layout */
+	.column {
+	  width: 100%;
+	}
+	
+	/* Stack elements vertically */
+	.row {
+	  flex-direction: column;
+	}
+  }

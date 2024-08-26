@@ -23,19 +23,12 @@ const ContactForm = () => {
 		e.preventDefault();
 		setIsLoading(true);
 		try {
-			const response = await fetch('https://www.jc-ww.ca/api/send', {
+			const response = await fetch('/api/send', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
-					'Access-Control-Allow-Origin': '*,',
 				},
-				body: JSON.stringify({
-					sponsor: data.sponsor,
-					email: data.email,
-					phone: data.phone,
-					subject: data.subject,
-					message: data.message,
-				}),
+				body: JSON.stringify(data),
 			});
 			if (response.ok) {
 				setData({
@@ -46,10 +39,9 @@ const ContactForm = () => {
 					message: '',
 				});
 				toast.success('Message Sent');
-				reset();
 			} else {
-				toast.error('Failed to send message');
-				console.log('data', data);
+				const errorData = await response.json();
+				toast.error(errorData.error || 'Failed to send message');
 			}
 		} catch (error) {
 			console.error('Error sending email:', error);

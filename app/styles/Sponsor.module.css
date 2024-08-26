@@ -69,4 +69,62 @@
 		justify-content: center;
 		align-items: center;
 	}
+	/* Tablet devices (768px and below) */
+	@media (max-width: 768px) {
+		/* Add your tablet-specific styles here */
+		.container {
+			width: 90%;
+			padding: 0 15px;
+		}
+
+		/* Adjust font sizes */
+		.containe h1 {
+			font-size: 24px;
+		}
+
+		.containe h2 {
+			font-size: 20px;
+		}
+
+		.containe p {
+			font-size: 16px;
+		}
+
+		/* Adjust layout */
+		.column {
+			width: 50%;
+		}
+	}
+
+	/* Mobile devices (425px and below) */
+	@media (max-width: 425px) {
+		/* Add your mobile-specific styles here */
+		.container {
+			width: 100%;
+			padding: 0 10px;
+		}
+
+		/* Further adjust font sizes */
+		.container h1 {
+			font-size: 20px;
+		}
+
+		.container h2 {
+			font-size: 18px;
+		}
+
+		.container p {
+			font-size: 14px;
+		}
+
+		/* Adjust layout */
+		.column {
+			width: 100%;
+		}
+
+		/* Stack elements vertically */
+		.row {
+			flex-direction: column;
+		}
+	}
 }
