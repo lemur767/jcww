@@ -10,7 +10,7 @@ const nextConfig = {
 				headers: [
 					{
 						key: 'Access-Control-Allow-Origin',
-						value: '*', // Set your origin
+						value: 'https://www.jc-ww.ca', // Replace with your domain
 					},
 					{
 						key: 'Access-Control-Allow-Methods',
@@ -21,6 +21,14 @@ const nextConfig = {
 						value: 'Content-Type, Authorization',
 					},
 				],
+			},
+		];
+	},
+	async rewrites() {
+		return [
+			{
+				source: '/api/:path*',
+				destination: '/api/:path*',
 			},
 		];
 	},

@@ -1,4 +1,5 @@
 'use client';
+
 import Button from '../components/Button';
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
@@ -6,7 +7,7 @@ import styles from '../styles/Booking.module.css';
 
 const BookingForm = () => {
 	const [data, setData] = useState({
-		sponsor: '',
+		client: '',
 		email: '',
 		phone: '',
 		subject: '',
@@ -29,7 +30,7 @@ const BookingForm = () => {
 					'Content-Type': 'application/json',
 				},
 				body: JSON.stringify({
-					sponsor: data.sponsor,
+					sponsor: data.client,
 					email: data.email,
 					phone: data.phone,
 					subject: data.subject,
@@ -38,7 +39,7 @@ const BookingForm = () => {
 			});
 			if (response.ok) {
 				setData({
-					sponsor: '',
+					client: '',
 					email: '',
 					phone: '',
 					subject: '',
@@ -58,14 +59,13 @@ const BookingForm = () => {
 	};
 
 	return (
-		<form className={styles.main} onSubmit={sendEmail}>
+		<form className={styles.formContainer} onSubmit={sendEmail}>
 			<input
-				className={styles.inputWrapper}
-				name='sponsor'
-				value={data.sponsor}
+				name='client'
+				value={data.client}
 				onChange={handleChange}
 				type='text'
-				placeholder='Company Name'
+				placeholder='Name/Organization'
 			/>
 			<input
 				name='email'

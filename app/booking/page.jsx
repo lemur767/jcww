@@ -1,7 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import styles from '../styles/Booking.module.css';
-import BookingForm from '../components/ContactForm';
+import BookingForm from '../components/BookingForm';
 
 const Booking = () => {
 	return (
