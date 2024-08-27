@@ -6,18 +6,19 @@ const nextConfig = {
 	async headers() {
 		return [
 			{
-				source: '/api/send',
+				source: '/api/:path*',
 				headers: [
-					{ key: 'Access-Control-Allow-Credentials', value: 'true' },
-					{ key: 'Access-Control-Allow-Origin', value: '*' },
+					{
+						key: 'Access-Control-Allow-Origin',
+						value: '*', // Set your origin
+					},
 					{
 						key: 'Access-Control-Allow-Methods',
-						value: 'GET, DELETE, PUT, POST, PATCH',
+						value: 'GET, POST, PUT, DELETE, OPTIONS',
 					},
 					{
 						key: 'Access-Control-Allow-Headers',
-						value:
-							'Accept-Post, Accept, Content-Length, Content-Type, X-Requested-With, X-Api-Version, User-Agent, Host, Accept-Endcoding, Connection',
+						value: 'Content-Type, Authorization',
 					},
 				],
 			},
