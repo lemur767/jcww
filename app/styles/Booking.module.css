@@ -1,20 +1,126 @@
 .main {
-	display: block;
-	position: relative;
-	gap: 8px;
-	background-color: #f7f1c6;
-}
-.formContainer {
-	justify-content: center;
-	justify-items: center;
-	background: rgba(163, 118, 115, 0.25);
-	gap: 16px;
 	display: flex;
 	flex-direction: column;
-	padding: 2vw;
-	width: fit-content;
-	height: auto;
-	border-radius: 15px;
-	box-shadow: 3px 3px 3px 0.3px black;
-	border: medium solid #fff02b;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	background-color: #f7f1c6;
+	padding: 16px;
+	margin: 8px;
+	width: 100%;
+	height: fit-content;
+}
+.title {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 1;
+	justify-content: center;
+	align-content: center;
+}
+.title h1 {
+	font-size: 48px;
+}
+.title p {
+	font-size: 24px;
+}
+.contentWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 590px) {
+	.contentWrapper body {
+		font-size: 18px;
+		font-family: 'Revalia';
+		font-weight: 400;
+	}
+	.contentWrapper h1 {
+		font-size: medium;
+	}
+	.contentWrapper p {
+		font-size: small;
+	}
+	/* Existing styles */
+
+	/* Tablet devices (768px and below) */
+	@media (max-width: 768px) {
+		/* Add your tablet-specific styles here */
+		.contentWrapper {
+			width: 90%;
+			padding: 0 15px;
+		}
+
+		/* Adjust font sizes */
+		.contentWrapper h1 {
+			font-size: 24px;
+		}
+
+		.contentWrapper h2 {
+			font-size: 20px;
+		}
+
+		.contentWrapper p {
+			font-size: 16px;
+		}
+		.title h1 {
+			font-size: 24px;
+		}
+
+		.title h2 {
+			font-size: 20px;
+		}
+
+		.title p {
+			font-size: 16px;
+		}
+		/* Adjust layout */
+		.column {
+			width: 50%;
+		}
+	}
+
+	/* Mobile devices (425px and below) */
+	@media (max-width: 425px) {
+		/* Add your mobile-specific styles here */
+		.contentWrapper {
+			width: 100%;
+			padding: 0 10px;
+		}
+
+		/* Further adjust font sizes */
+		.contentWrapper h1 {
+			font-size: 20px;
+		}
+
+		.contentWrapper h2 {
+			font-size: 18px;
+		}
+
+		.contentWrapper p {
+			font-size: 14px;
+		}
+		.title h1 {
+			font-size: 24px;
+		}
+
+		.title h2 {
+			font-size: 20px;
+		}
+
+		.title p {
+			font-size: 16px;
+		}
+
+		/* Adjust layout */
+		.column {
+			width: 100%;
+		}
+
+		/* Stack elements vertically */
+		.row {
+			flex-direction: column;
+		}
+	}
 }

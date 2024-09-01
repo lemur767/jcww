@@ -3,7 +3,7 @@
 import Button from '../components/Button';
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
-import styles from '../styles/Booking.module.css';
+import styles from '../styles/Bookform.module.css';
 
 const BookingForm = () => {
 	const [data, setData] = useState({
@@ -66,6 +66,7 @@ const BookingForm = () => {
 				onChange={handleChange}
 				type='text'
 				placeholder='Name/Organization'
+				autoComplete='false'
 			/>
 			<input
 				name='email'
@@ -73,6 +74,7 @@ const BookingForm = () => {
 				onChange={handleChange}
 				type='email'
 				placeholder='Email'
+				autoComplete='false'
 			/>
 			<input
 				name='phone'
@@ -80,6 +82,7 @@ const BookingForm = () => {
 				onChange={handleChange}
 				type='text'
 				placeholder='Phone Number'
+				autoComplete='false'
 			/>
 			<input
 				name='subject'
@@ -87,6 +90,7 @@ const BookingForm = () => {
 				onChange={handleChange}
 				type='text'
 				placeholder='Subject'
+				autoComplete='false'
 			/>
 			<textarea
 				name='message'
@@ -94,13 +98,15 @@ const BookingForm = () => {
 				placeholder='Message'
 				onChange={handleChange}
 			></textarea>
-			<Button
-				className='primary'
-				text={isLoading ? 'Sending...' : 'Submit Message'}
-				type='submit'
-				onClick={sendEmail}
-				disabled={isLoading}
-			/>
+			<div className={styles.buttonWrapper}>
+				<Button
+					className='primary'
+					text={isLoading ? 'Sending...' : 'Submit Message'}
+					type='submit'
+					onClick={sendEmail}
+					disabled={isLoading}
+				/>
+			</div>
 		</form>
 	);
 };
