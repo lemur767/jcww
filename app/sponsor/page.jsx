@@ -6,8 +6,9 @@ const Sponsor = () => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.main}>
-				<div>
+				<div classname={styles.title}>
 					<h1>Our Goal at Johnny Calimarri Worldwide</h1>
+				</div>
 					<p>
 						We are a non-charity, self funded company. Our main slogan is we are
 						a goodwill based company, that builds smiles and sometimes people.
@@ -42,7 +43,7 @@ const Sponsor = () => {
 						don&apos;t go out far --Johnny Calimarri
 					</h2>
 				</div>
-			</div>
+			
 
 			<h2>
 				If you have interest in becoming a sponsor please fill out the form

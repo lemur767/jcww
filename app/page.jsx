@@ -30,7 +30,15 @@ export default function Home() {
 				<div className={styles.title2}>
 					<h1>Upcoming Events:</h1>
 				</div>
-
+				<div className={styles.card}>
+					<h2>Live TikTok Event - Date: Saturday October 26th</h2>
+					<p>
+						We will be broadcasting live from a Saturday Night Wrestling event.
+						Catch Johnny Live in the flesh at this rockin wrestling event.  See what trouble he&aposll
+						get himself into, Oh My Goodness!.
+					</p>
+				</div>
+			
 				<div className={styles.card}>
 					<h2>Hindi and Arabic Contests - Date: TBD</h2>
 					<p>

@@ -74,6 +74,7 @@ ul .nav_links {
 	align-items: center;
 	font-family: 'tenali';
 	font-size: xx-large;
+	gap: 16px;
 }
 .card {
 	display: flex;
